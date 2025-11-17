@@ -1,0 +1,153 @@
+/* ===== GLOBAL ===== */
+body {
+  background: #f3f3f3;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 850px;
+  margin: 20px auto;
+  padding-bottom: 40px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #222;
+  padding: 12px 20px;
+}
+
+.navbar a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SHARED INPUT STYLES ===== */
+input,
+select,
+textarea,
+button {
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background: #0078ff;
+  color: white;
+  border: none;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ===== SEARCH & FILTERS ===== */
+.search,
+.filter {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* ===== FORM (CREATE TASK) ===== */
+.form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.form input,
+.form select,
+.form textarea {
+  margin-bottom: 15px;
+}
+
+/* ===== TASK LIST ===== */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #0078ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.task.done {
+  opacity: 0.6;
+  border-left-color: #00cc66;
+  text-decoration: line-through;
+}
+
+.task h3 {
+  margin: 0 0 5px;
+}
+
+.task-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 120px;
+}
+
+.details {
+  display: inline-block;
+  text-align: center;
+  background: #444;
+  padding: 10px;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.details:hover {
+  background: #222;
+}
+
+.delete {
+  background: #d93636;
+}
+
+.delete:hover {
+  background: #b82222;
+}
+
+/* ===== TASK DETAILS PAGE ===== */
+.task-details {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
